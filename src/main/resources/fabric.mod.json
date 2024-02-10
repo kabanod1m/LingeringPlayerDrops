@@ -3,7 +3,7 @@
   "id": "lingeringplayerdrops",
   "version": "${version}",
   "name": "LingeringPlayerDrops",
-  "description": "A Fabric Minecraft mod that prevents items that players drop from ever despawning.",
+  "description": "A Fabric Minecraft mod that prevents items that players drop from ever despawning. Configure with gamerules playerDropItemsLinger and playerDeathItemsLinger.",
   "authors": [
     "kabanod1m"
   ],
@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "icon": "assets/lingeringplayerdrops/icon.png",
-  "environment": "server",
+  "environment": "*",
   "entrypoints": {
     "client": [
       "org.winglessbirds.lingeringplayerdrops.client.LingeringPlayerDropsClient"
@@ -22,6 +22,9 @@
       "org.winglessbirds.lingeringplayerdrops.LingeringPlayerDrops"
     ]
   },
+  "mixins": [
+    "lingeringplayerdrops.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",

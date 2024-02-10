@@ -1,2 +1,11 @@
-package PACKAGE_NAME;public class LingeringPlayerDropsClient {
+package org.winglessbirds.lingeringplayerdrops.client;
+
+import net.fabricmc.api.ClientModInitializer;
+
+public class LingeringPlayerDropsClient implements ClientModInitializer {
+
+    @Override
+    public void onInitializeClient() {
+
+    }
 }

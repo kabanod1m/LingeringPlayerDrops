@@ -1,0 +1,4 @@
+{
+  "gamerule.playerDropItemsLinger": "Dropped items stay forever",
+  "gamerule.playerDeathItemsLinger": "Items stay forever after death"
+}
