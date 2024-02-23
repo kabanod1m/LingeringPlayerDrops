@@ -22,7 +22,7 @@ public class LingeringPlayerDrops implements ModInitializer {
         PlayerDropItemEvents.AFTER.register(new PlayerDropHandler());
     }
 
-    // Clean up world from lingering items
+    /// Clean up world from lingering items
     // Teleport to self
     // /tp @e[type=minecraft:item,nbt={Age:-32768s}] @s
     // Kill lingering items

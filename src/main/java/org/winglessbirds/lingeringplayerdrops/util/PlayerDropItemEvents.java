@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class PlayerDropItemEvents {
 
     public static final Event<After> AFTER = EventFactory.createArrayBacked(After.class,
-            (listeners) ->( stack, throwRandomly, retainOwnership, itemEntity) -> {
+            (listeners) -> (stack, throwRandomly, retainOwnership, itemEntity) -> {
                 for (After event : listeners) {
                     event.afterDropItem(stack, throwRandomly, retainOwnership, itemEntity);
                 }
